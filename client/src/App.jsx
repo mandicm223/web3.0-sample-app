@@ -1,15 +1,19 @@
-import { useState } from 'react'
-import './App.css'
+import { Navbar, Footer, Loader, Welcome, Transactions, Services } from "../components"
 
-function App() {
-
+const App = () => {
   return (
-    <div className="App">
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+    <div className="min-h-screen">
+      <div className="gradient-bg-welcome">
+        <Navbar/>
+        <Welcome/>
+      </div>
+      <div>
+        <Services/>
+        <Transactions/>
+        <Footer/>
+      </div>
     </div>
   )
 }
 
-export default App
+export default App;
